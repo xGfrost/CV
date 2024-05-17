@@ -1,0 +1,99 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>CV Fadel</title>
+</head>
+<body>
+    <div class="background">
+       <img id="pic" src="image/Fadel.jpg" alt="Gfrost eror" width="500">
+       <div class="id" style="display: none;"><h1>Muhammad Fadel Akbar</h1>
+        <h1 class="id" style="display: none;">Mahasiswa UPN Veteran</h1>
+        <h1 class="id" style="display: none;">Jawa Timur</h1></div>      
+    </div>
+
+    
+    <div>
+        <h1 class="judul">ABOUT ME</h1>
+        <p class="me" style="display: none;">Mahasiswa upn veteran jawa timur berprovesi sebagai Programer dan atlet cabang e-sport</p>
+    </div>
+    
+    <h1 class="judul">EDUCATION</h1>
+    <p class="sekolah" style="display: none;">SMA PROGRESIF BUMI SHALAWAT </p>
+    <p class="sekolah" style="display: none;">2019 - 2022</p>
+
+    <h1 class="judul">SKILL</h1>
+    <p class="game" style="display: none;">PRO GAMER</p>
+    <i class="fa fa-star" style="display: none;"></i>
+    <i class="fa fa-star" style="display: none;"></i>
+    <i class="fa fa-star" style="display: none;"></i>
+    <i class="fa fa-star" style="display: none;"></i>
+
+    <h1 class="judul">ACHIEVEMENT</h1>
+    <ol>
+        <li class="juara" style="display: none;">Atlet POMPROV</li>
+        <li class="juara" style="display: none;">Atlet PMCC</li>
+        <li class="juara" style="display: none;">Juara 3 PUBGM (Provinsi SULTRA)</li>
+        <li class="juara" style="display: none;">Juara 1 PUBGM (FEB UI)</li>
+        <li class="juara" style="display: none;">Juara 1 PUBGM (BUDI LUHUR)</li>
+    </ol>
+
+    <h1 class="judul">CONTACT ME</h1>
+    <ul>
+        <li class="media" style="display: none;">081354700130 (Handphone number)</li>
+        <li class="media" style="display: none;">fadelakbar528 (Instagram)</li>
+        <li class="media" style="display: none;">fadelakbar5 (Tiktok)</li>
+    </ul>
+    <div class="container">
+    <button class="profile">id</button>
+    <button class="aboutme">ABOUT ME</button>
+    <button class="education">EDUCATION</button>
+    <button class="hobi">SKILL</button>
+    <button class="penghargaan">ACHIEVEMENT</button>
+    <button class="sosmed">CONTACT ME</button>
+</div>
+    <script>$(document).ready(function(){
+        $(".profile").click(function(){
+            $(".id").toggle(1000)
+        });
+    });
+    $(document).ready(function(){
+        $(".aboutme").click(function(){
+            $(".me").toggle(1000)
+        });
+    });
+    $(document).ready(function(){
+        $(".education").click(function(){
+            $(".sekolah").toggle(1000)
+        });
+    });
+    $(document).ready(function(){
+        $(".hobi").click(function(){
+            $(".game, .fa-star").toggle(1000)
+        });
+    });
+    $(document).ready(function(){
+        $(".penghargaan").click(function(){
+            $(".juara").toggle(1000)
+        });
+    });
+    $(document).ready(function(){
+        $(".sosmed").click(function(){
+            $(".media").toggle(1000)
+        });
+    });
+    
+        </script>
+    
+
+    
+    
+</body>
+</html>
